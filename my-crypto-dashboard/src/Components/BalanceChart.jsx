@@ -1,39 +1,4 @@
-// // components/BalanceChart.jsx
-// import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
 
-// const data = [
-//   { name: "Jan", balance: 4000 },
-//   { name: "Feb", balance: 3000 },
-//   { name: "Mar", balance: 5000 },
-//   { name: "Apr", balance: 4780 },
-//   { name: "May", balance: 5890 },
-//   { name: "Jun", balance: 4390 },
-//   { name: "Jul", balance: 6490 },
-// ];
-
-// export default function BalanceChart() {
-//   return (
-//     <div className="bg-white p-4 rounded-2xl shadow-md">
-//       <h2 className="text-lg font-semibold mb-4">Balance Overview</h2>
-//       <ResponsiveContainer width="100%" height={300}>
-//         <LineChart data={data}>
-//           <CartesianGrid strokeDasharray="3 3" />
-//           <XAxis dataKey="name" />
-//           <YAxis />
-//           <Tooltip />
-//           <Line
-//             type="monotone"
-//             dataKey="balance"
-//             stroke="#6366f1"
-//             strokeWidth={3}
-//             dot={{ r: 5 }}
-//           />
-//         </LineChart>
-//       </ResponsiveContainer>
-//     </div>
-//   );
-// }
-// components/BalanceChart.jsx
 import { useEffect, useState } from "react";
 import axios from "axios";
 import {
